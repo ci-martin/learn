@@ -1,0 +1,21 @@
+{
+    "folders": [
+		{ "path": ".", "name": "Go Projects" },
+		{ "path": "./Template_GoProject", "name": "Template" },
+    ],
+    "settings": {
+		"go.lintTool": "golangci-lint",
+		"go.useLanguageServer": true,
+		"go.languageServerExperimentalFeatures": {
+			"documentLink": true,
+			"diagnostics": true,
+			"documentSymbol": true,
+			"completion": true,
+			"format": true,
+			"hover": true,
+			"signatureHelp": true,
+			"referencesCodeLens": true,
+			"renameCodeLens": true
+		}
+    }
+}

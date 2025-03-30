@@ -1,1 +1,102 @@
-.trunk
+# Go specific ignores
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+*.cov
+coverage.html
+coverage.txt
+
+# Go workspace file
+go.work
+
+# Dependency directories
+vendor/
+
+# Go debugging temporary files
+__debug_bin
+
+# Compiled Object files, Static and Dynamic libs
+*.o
+*.a
+
+# Common Go temporary files
+tmp/
+temp/
+
+# VSCode specific ignores
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# VSCode profiles directory
+.vscode-profiles/
+
+# Local history for VSCode
+.history/
+
+# VSCode port files
+.vscode/*.port
+
+# Built VSCode Extensions
+*.vsix
+
+# VSCode Local Workspaces
+!*.code-workspace
+
+# Ignore all local configuration in .vscode directory except what we want to share
+!.vscode/settings.json.default
+!.vscode/extensions.json.default
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Editor backups
+*~
+*.bak
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Output/build directories
+bin/
+dist/
+build/
+
+# Golang debugging files created by Delve
+debug
+
+# Language Server Protocol directories
+.lsp/
+
+# Air (Go live reload) files
+.air.toml
+tmp/
+
+# Any other project-specific generated files
+__generated__/
