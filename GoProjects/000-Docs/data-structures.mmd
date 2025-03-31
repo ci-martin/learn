@@ -1,0 +1,57 @@
+---
+title: Data Structures
+description: A diagram representing various data structures and their relationships.
+---
+classDiagram
+    class Node {
+        +Value int
+        +Next *Node
+    }
+
+    class LinkedList {
+        +Head *Node
+        +Tail *Node
+        +Size int
+        +AddFront(value int)
+        +AddBack(value int)
+        +RemoveFront() (int, bool)
+        +Contains(value int) bool
+        +GetSize() int
+    }
+
+    class Stack {
+        -items []int
+        +Push(value int)
+        +Pop() (int, bool)
+        +Peek() (int, bool)
+        +IsEmpty() bool
+        +Size() int
+    }
+
+    class Queue {
+        -items []int
+        +Enqueue(value int)
+        +Dequeue() (int, bool)
+        +Peek() (int, bool)
+        +IsEmpty() bool
+        +Size() int
+    }
+
+    class BinaryTreeNode {
+        +Value int
+        +Left *BinaryTreeNode
+        +Right *BinaryTreeNode
+    }
+
+    class BinarySearchTree {
+        +Root *BinaryTreeNode
+        +Insert(value int)
+        +Search(value int) bool
+        +Delete(value int)
+        +InOrderTraversal() []int
+        +PreOrderTraversal() []int
+        +PostOrderTraversal() []int
+    }
+
+    LinkedList --> Node : contains
+    BinarySearchTree --> BinaryTreeNode : contains
